@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import Navbar from "./components/Navbar";
 import Thunder from "./components/Thunder";
@@ -10,7 +10,7 @@ import Contact from "./pages/Contact";
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Thunder />
       <div className="app-shell">
         <Navbar />
@@ -24,6 +24,6 @@ export default function App() {
           </Routes>
         </AnimatePresence>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
